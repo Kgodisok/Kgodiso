@@ -80,7 +80,6 @@ function App() {
           ))}
         </div>
       </section>
-      <footer className="gallery-footer">A few things I love.</footer>
     </main>
   )
 }
