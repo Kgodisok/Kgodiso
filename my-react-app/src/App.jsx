@@ -9,10 +9,24 @@ const photos = [
     shape: 'photo-tall',
   },
   {
+    image: '/gallery/djimage.jpg',
+    alt: 'Gabbana Sounds deep house mixtape artwork with Kgodiso at the DJ decks',
+    title: 'Gabbana Sounds',
+    description: 'Deep house mixtape.',
+    shape: 'photo-tall',
+  },
+  {
     image: '/gallery/IMG-20241211-WA0025.jpg',
     alt: 'Portrait of Kgodiso wearing a black beanie and white shirt',
     title: 'A moment of me',
     description: 'A sunny day and a quick photo.',
+    shape: 'photo-tall',
+  },
+  {
+    image: '/gallery/Best Picture.jpeg',
+    alt: 'Portrait of Kgodiso wearing a blue shirt and white shorts',
+    title: 'A portrait in blue',
+    description: 'A photo of me.',
     shape: 'photo-tall',
   },
   {
@@ -67,7 +81,16 @@ function App() {
         <span className="photo-count">{photos.length} PHOTOS</span>
       </header>
 
-      <section className="photo-section" id="top" aria-label="Photo gallery">
+      <section className="gallery-intro" id="top">
+        <p className="intro-kicker">A PERSONAL PHOTO COLLECTION</p>
+        <h1>Things I love,<br /><span>in pictures.</span></h1>
+        <p className="intro-copy">From the DJ decks and my dream car to the heroes I grew up with, these photos capture a few of my favorite things.</p>
+      </section>
+
+      <section className="photo-section" aria-labelledby="gallery-title">
+        <div className="gallery-heading">
+          <div><h2 id="gallery-title">The gallery</h2><p>Music, memories, and the things that inspire me.</p></div>
+        </div>
         <div className="photo-grid">
           {photos.map((photo) => (
             <figure className={`photo-card ${photo.shape}`} key={photo.image}>

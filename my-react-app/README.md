@@ -1,6 +1,6 @@
 # Personal photo gallery
 
-A responsive personal portfolio built with React and Vite.
+A responsive, animated personal photo gallery built with React and Vite.
 
 ## Run locally
 
@@ -8,6 +8,15 @@ A responsive personal portfolio built with React and Vite.
 npm install
 npm run dev
 ```
+
+## Production build
+
+```sh
+npm run build
+npm run preview
+```
+
+The deployable static site is generated in `dist/`. Publish the contents of that folder with your hosting provider.
 
 ## Personalize
 
